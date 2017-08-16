@@ -28,6 +28,16 @@ body{background-color: #fff; padding: 20px;}
 #funQuiz p {
     margin: 0px 0px 14px opx;
 } 
+#funQuiz .btn{
+	display: inline-block;
+	cursor: pointer;
+	background-color: #c04b01;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 6px;
+
+}
 
 #funQuiz .intro {
 	position:absolute;
