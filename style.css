@@ -101,6 +101,32 @@ body{background-color: #fff; padding: 20px;}
 }
 
 #funQuiz .question .ans::after {
-	 content: 'q';
+	 content: '';
+	 display: block;
+	 width: 20px;
+	 height: 20px;
+	 background: no-repeat 0px 0px;
+	 background-size: 20px 20px;
+	 position: absolute;
+	 top: 5px;
+	 right: 5px;
 }
 
+#funQuiz .question .ans.selected::after {
+	background-image: url(incorrect.svg);
+}
+
+#funQuiz .question .ans.correct::after {
+	background-image: url(correct.svg);
+}
+
+#funQuiz .question.unanswered .ans {
+	cursor: pointer;
+}
+#funQuiz .question.unanswered .ans:hover {
+	background-color: rgba(238,189,102,.2);
+}
+
+#funQuiz .question.answered .ans {
+	cursor: default;
+}
