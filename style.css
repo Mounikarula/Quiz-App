@@ -46,7 +46,7 @@ body{background-color: #fff; padding: 20px;}
     margin: 0px 0px 14px opx;
 } 
 
-#funQuiz .btn{
+#funQuiz .btn {
 	display: inline-block;
 	cursor: pointer;
 	background-color: #c04b01;
@@ -76,7 +76,7 @@ body{background-color: #fff; padding: 20px;}
 	left: 40px;
 }
 
-#funQuiz .question  .text {
+#funQuiz .question .text {
 	font-size: 1.6em;
 	margin: 0px 0px 20px 0px;
 }
@@ -90,5 +90,17 @@ body{background-color: #fff; padding: 20px;}
 	padding: 10px;
 	margin: 0px 15px 15px 0px;
 	position: relative;
+}
+
+#funQuiz .question .ans.selected {
+	border-color: #be4b16;
+}
+
+#funQuiz .question .ans.correct {
+	border-color: #459a2e;
+}
+
+#funQuiz .question .ans::after {
+	 content: 'q';
 }
 
