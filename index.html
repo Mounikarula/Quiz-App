@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="funQuiz">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Test Your Knowledge: Solar System</title>
@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		
-		<div id="funQuiz">
+		<div id="funQuiz" ng-controller = "QuizController">
 
 		    <h1>Test Your Knowledge: <span>Solar System</span></h1>
 		    <div class="progress">
@@ -47,7 +47,10 @@
 		    	</div>
 		    </div>
 
-
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="quiz.js"></script>
+
 	</body>
 </html>
