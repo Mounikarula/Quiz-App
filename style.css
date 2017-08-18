@@ -79,12 +79,23 @@ body{background-color: #fff; padding: 20px;}
 	content: '';
 	display: block;
 	position: absolute;
-	top: -90px;
-	left: -10px;
-	width: 75px;
+	top: -70px;
+	left: -15px;
+	width: 55px;
 	height: 80px;
-	background: url(ring.svg) no-repeat 0px 0px;
+	background: url(green.svg) no-repeat 0px 0px;
 	transition: opacity 1s, top 1s;
+	opacity: 0;
+}
+
+#funQuiz .progress div.on,
+#funQuiz .progress div.answered {
+	background-color: #efbe5e;	
+}
+
+#funQuiz .progress div.correct::after {
+	top: -40px;
+	opacity:1;
 }
 
 #funQuiz .intro {
