@@ -11,5 +11,14 @@
 			$scope.myQuestions = quizData.data;
 			$scope.totalQuestions = $scope.myQuestions.length;
 		});
+
+
+		$scope.selectAnswer = function(qIndex,aIndex) {
+			alert( qIndex + '' + aIndex);
+		}
+
+
+
+
 	}]);
 })();
