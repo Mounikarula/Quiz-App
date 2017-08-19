@@ -11,11 +11,13 @@
 		<div id="funQuiz" ng-controller = "QuizController">
 
 		    <h1>Test Your Knowledge: <span>Solar System</span></h1>
-		    <div class="progress"> {{totalQuestions}} </div>
+		    <div class="progress"> 
+		          <div ng-repeat="myQuestion in myQuestions"></div>
+		    </div>
 
 
 
-		    <div class="intro">
+		    <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
 		    	<h2>Welcome</h2>
 		    	<p>Click begin to test your knowledge of Solar System.</p>
 		    	<p class="btn">Begin</p>

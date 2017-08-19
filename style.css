@@ -224,5 +224,9 @@ body{background-color: #fff; padding: 20px;}
     background-image: url(twitter.svg)	
 }
 
+#funQuiz .active, #funQuiz .inactive { transition: left 1.5s ease-in-out; }
+#funQuiz .active { left:40px; }
+#funQuiz .intro.inactive, #funQuiz .inactive.answered{ left: -1350px; } 
+
 
 
